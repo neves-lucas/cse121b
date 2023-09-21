@@ -22,8 +22,8 @@ imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 
 /* Step 5 - Array */
 let favoriteFoods = [];
-foodElement.innerHTML = favoriteFoods;
 favoriteFoods.push('Pizza', 'Hamburguer', 'Sushi', 'Lasagna', 'Pasta');
+foodElement.innerHTML = favoriteFoods;
 const newFood = ['Ice Cream'];
 favoriteFoods.push(newFood);
 foodElement.innerHTML += `<br>${favoriteFoods}`

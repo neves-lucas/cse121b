@@ -6,6 +6,7 @@
 const fullName = 'Lucas Neves Rocha';
 const currentYear = new Date().getFullYear();
 const profilePicture = 'images/selfie.jpg'
+const title = 'W02-Task - Profile Home Page';
 
 /* Step 3 - Element Variables */
 const nameElement = document.getElementById('name');

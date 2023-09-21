@@ -12,7 +12,6 @@ const nameElement = document.getElementById('name');
 const foodElement = document.getElementById('food');
 const yearElement = document.querySelector('#year');
 const imageElement = document.querySelector('img');
-const foodTitle = document.querySelector('h2');
 
 
 /* Step 4 - Adding Content */
@@ -20,10 +19,10 @@ nameElement.innerHTML = `<strong>${fullName}</strong>`;
 yearElement.textContent = `Year: ${currentYear}`;
 imageElement.setAttribute('src', profilePicture);
 imageElement.setAttribute('alt', `Profile image of ${fullName}`);
-foodTitle.innerHTML += `<hr>`
 
 /* Step 5 - Array */
 let favoriteFoods = [];
+foodElement.innerHTML = favoriteFoods;
 favoriteFoods.push('Pizza', 'Hamburguer', 'Sushi', 'Lasagna', 'Pasta');
 const newFood = ['Ice Cream'];
 favoriteFoods.push(newFood);

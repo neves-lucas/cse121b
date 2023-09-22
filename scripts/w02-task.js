@@ -4,7 +4,7 @@
 
 /* Step 2 - Variables */
 const fullName = 'Lucas Neves Rocha';
-let currentYear = new Date().getFullYear();
+let currentYear = '2023';
 let profilePicture = 'images/selfie.jpg'
 
 /* Step 3 - Element Variables */
@@ -21,13 +21,12 @@ imageElement.setAttribute('src', profilePicture);
 imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 
 /* Step 5 - Array */
-let favoriteFoods = [];
-favoriteFoods.push('Pizza', 'Hamburguer', 'Sushi', 'Lasagna', 'Pasta');
+let favoriteFoods = [' Pizza', ' Hamburguer', ' Sushi', ' Lasagna', ' Pasta'];
 foodElement.innerHTML = favoriteFoods;
-const newFood = ['Ice Cream'];
+let newFood = ' Ice Cream';
 favoriteFoods.push(newFood);
-foodElement.innerHTML += `<br>${favoriteFoods}`
-favoriteFoods.shift();
-foodElement.innerHTML += `<br>${favoriteFoods}`
+foodElement.innerHTML += `<br>${favoriteFoods}`;
+favoriteFoods.splice(0, 1);
+foodElement.innerHTML += `<br>${favoriteFoods}`;
 favoriteFoods.pop();
-foodElement.innerHTML += `<br>${favoriteFoods}`
+foodElement.innerHTML += `<br>${favoriteFoods}`;
